@@ -1,4 +1,4 @@
-# 🎵 Audio Segment Classifier
+# 🎵 Audio Classifier
 
 A binary classification model that labels 10-second audio segments from full songs as either **"good" (1)** or **"bad" (0)** for use in audio-based applications like guessing games, highlight extraction, or clip curation.
 
@@ -66,8 +66,8 @@ Used in [Bollyguess](https://www.bollyguess.ca) to select ideal audio clips for 
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/your-username/audio-segment-classifier.git
-   cd audio-segment-classifier
+   git clone https://github.com/your-username/audio-classifier.git
+   cd audio-classifier
    ```
 
 2. **Install dependencies**
@@ -102,7 +102,7 @@ Used in [Bollyguess](https://www.bollyguess.ca) to select ideal audio clips for 
 ## 📂 Project Structure
 
 ```
-audio-segment-classifier/
+audio-classifier/
 │
 ├── data/
 │   └── clips/                # 10-second audio segments
@@ -128,3 +128,4 @@ MIT License
 Built by Om Nathwani  
 Email: ornathwa@uwaterloo.ca  
 GitHub: [omn25](https://github.com/omn25)
+
