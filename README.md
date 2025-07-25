@@ -20,6 +20,7 @@ The model is trained on manually labeled segments and extracts audio features su
 - **Librosa** – feature extraction (MFCC, chroma, tempo, pitch)
 - **FFmpeg** – audio slicing and preprocessing
 - **Scikit-learn** – evaluation (confusion matrix, F1-score)
+- **Pandas**
 
 ---
 
