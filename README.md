@@ -67,7 +67,7 @@ Used in [Bollyguess](https://www.bollyguess.ca) to select ideal audio clips for 
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/your-username/audio-classifier.git
+   git clone https://github.com/omn25/audio-classifier.git
    cd audio-classifier
    ```
 
@@ -78,17 +78,17 @@ Used in [Bollyguess](https://www.bollyguess.ca) to select ideal audio clips for 
 
 3. **Run preprocessing**
    ```bash
-   python scripts/slice_audio.py --input songs/ --output clips/
+   python model_trainer/build_dataset.py --input songs/ --output clips/
    ```
 
 4. **Extract features**
    ```bash
-   python scripts/extract_features.py --input clips/ --output features.csv
+   python model_trainer/utils.py --input clips/ --output features.csv
    ```
 
 5. **Train the model**
    ```bash
-   python train.py --features features.csv
+   python model_trainer/train.py --features features.csv
    ```
 
 ---
@@ -117,11 +117,6 @@ audio-classifier/
 ├── test_songs/            # Sample songs for testing predictions
 │   ├── abhi_na_jao_chod_kar.mp3
 │   └── ghar_more_pardesiya.mp3
-│
-├── __pycache__/           # Python cache files (ignore)
-├── README.md
-├── requirements.txt
-
 ```
 
 ---
