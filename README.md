@@ -105,15 +105,23 @@ Used in [Bollyguess](https://www.bollyguess.ca) to select ideal audio clips for 
 ```
 audio-classifier/
 │
-├── data/
-│   └── clips/                # 10-second audio segments
-├── scripts/
-│   ├── slice_audio.py        # FFmpeg slicing
-│   ├── extract_features.py   # Feature engineering
+├── model_trainer/
+│   ├── build_dataset.py
+│   ├── model.py
+│   ├── test_adaptive_segments.py
+│   ├── test_model.py
+│   ├── train.py
+│   └── utils.py
 │
-├── model/
-│   ├── train.py              # Training script
-│   └── model.pt              # Trained weights
+├── songs/                  # Optional: raw input songs (if used)
+├── test_songs/            # Sample songs for testing predictions
+│   ├── abhi_na_jao_chod_kar.mp3
+│   └── ghar_more_pardesiya.mp3
+│
+├── __pycache__/           # Python cache files (ignore)
+├── README.md
+├── requirements.txt
+
 ```
 
 ---
